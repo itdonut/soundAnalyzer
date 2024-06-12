@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+wave-file-examples/
+__pycache__/
+.venv/
+.idea/
+resources/

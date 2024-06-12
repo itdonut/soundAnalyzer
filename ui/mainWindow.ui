@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1528</width>
+    <height>790</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Sound Analyzer</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="addSignalPushBtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>180</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 96, 206);
+color: white;
+font-weight: bold;
+border: none;
+font-size: 18px;</string>
+    </property>
+    <property name="text">
+     <string>Add signal</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fourierTransformPushBtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>180</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 96, 206);
+color: white;
+font-weight: bold;
+border: none;
+font-size: 18px;</string>
+    </property>
+    <property name="text">
+     <string>Fourier Transform</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="filtersPushBtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>180</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 96, 206);
+color: white;
+font-weight: bold;
+border: none;
+font-size: 18px;</string>
+    </property>
+    <property name="text">
+     <string>Filters</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="windowingPushBtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>220</y>
+      <width>180</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 96, 206);
+color: white;
+font-weight: bold;
+border: none;
+font-size: 18px;</string>
+    </property>
+    <property name="text">
+     <string>Windowing</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="spectrogramPushBtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>180</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 96, 206);
+color: white;
+font-weight: bold;
+border: none;
+font-size: 18px;</string>
+    </property>
+    <property name="text">
+     <string>Spectrogram</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="melSpectrogramPushBtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>180</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 96, 206);
+color: white;
+font-weight: bold;
+border: none;
+font-size: 18px;</string>
+    </property>
+    <property name="text">
+     <string>Mel-spectrogram</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chromagramPushBtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>430</y>
+      <width>180</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 96, 206);
+color: white;
+font-weight: bold;
+border: none;
+font-size: 18px;</string>
+    </property>
+    <property name="text">
+     <string>Chromagram</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="plotsTabWidget">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>10</y>
+      <width>1281</width>
+      <height>771</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">pane {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+    <property name="tabsClosable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>600</y>
+      <width>151</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/resources/logo.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resources/logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>
